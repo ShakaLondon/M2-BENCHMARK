@@ -9,7 +9,7 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 
 
     <style>
@@ -86,6 +86,15 @@
       .carousel-indicators {
           margin-bottom: -2rem;
 
+      }
+
+      /* logoSizeSmall {
+          height: 5px !important;
+          width: 5px !important;
+      } */
+
+      p.mb-0{
+          font-size: x-small;
       }
       
 
@@ -199,6 +208,24 @@
         <div class="carousel-inner">
             <div class="carousel-item active">
                 <img class="d-block w-100 h-25" src="gog-assets/carousel1.jpg" alt="First slide">
+                <div class="carousel-caption">
+                    <div class="row">
+                        <div class="container-fluid d-flex align-items-center justify-content-start h6">
+                            <button type="button" class="btn btn-primary btn-sm d-inline-flex align-items-center h6 px-2">
+                                <i class="fas fa-calendar-alt pr-2 py-1 fa-xs"></i>
+                                <p class="mb-0 align-self-center img-fluid">SOON</p>
+                            </button>
+                            <i class="fab fa-windows pl-2 fa-xs"></i>
+                        </div>
+                        <div class="row">
+                            <div class="container-fluid d-flex align-items-center justify-content-start">
+                                <p class=""></p>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
             </div>
             <div class="carousel-item">
                 <img class="d-block w-100 h-25" src="gog-assets/carousel2.jpg" alt="Second slide">
