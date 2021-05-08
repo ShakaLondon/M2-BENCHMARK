@@ -8,13 +8,16 @@
 
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-    <script src="https://use.fontawesome.com/409324a5ad.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+
 
     <style>
 
 
     body {
         background-color: rgb(185, 185, 185);
+        color: #2c2c2c;
     }
 
     .bg-dark {
@@ -22,8 +25,8 @@
       }
 
       .pagePadding {
-        padding-left: 20vw !important;
-        padding-right: 20vw !important;
+        padding-left: 15vw !important;
+        padding-right: 15vw !important;
       }
 
       @media (max-width: 1024px) {
@@ -48,15 +51,11 @@
       }
 
       h6 {
-          font-size: small;
+          font-size: x-small;
       }
 
       .displayInFlex {
           display: inline-flex
-      }
-
-      .fa-pen {
-        color: black;
       }
 
       .imgCaro{
@@ -65,9 +64,28 @@
       }
 
       @media (max-width: 990px){
-          div .navbar-nav, .dropdown{
+          div .navbar-nav{
               display: none;
           }
+      }
+
+      @media (max-width: 990px){
+          div>div.d-flex{
+              display: none !important;
+          }
+      }
+
+      .fa-highlighter{
+          color: #2c2c2c  !important;
+      }
+
+      hr{
+          width: 70vw;
+      }
+
+      .carousel-indicators {
+          margin-bottom: -2rem;
+
       }
       
 
@@ -137,8 +155,8 @@
             </ul>
 
 <!-- USER LOGIN -->
-            <div class="dropdown show d-inline-flex align-items-center">
-                <a class="btn btn-secondary bg-transparent border-0 dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <div class="nav-item dropdown d-flex align-items-center">
+                <a class="btn btn-secondary bg-transparent border-0 dropdown-toggle h6 mb-0" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     <img src="gog-assets/tile (19).jpg" class="profileSize img-fluid rounded-circle mr-1" alt=""> USERNAME
                 </a>
             
@@ -156,12 +174,17 @@
 
       <!-- HIGHLIGHTS -->
 
-      <div class="container-fluid pagePadding h6">
-          <span>
-            <i class="fa fa-pen"></i> Highlights
-          </span>
-
+      <div class="container-fluid pagePadding d-flex h6 my-3 align-items-center">
+          <!-- <span> -->
+            <i class="fas fa-highlighter mx-2 align-self-center"></i> 
+            <p class="mb-0">Highlights</p>
+          <!-- </span> -->
+        
       </div>
+
+      <hr>
+
+    
 
       <!-- CAROSEL -->
 
@@ -172,7 +195,6 @@
             <li data-target="#my-carousel" data-slide-to="2"></li>
             <li data-target="#my-carousel" data-slide-to="3"></li>
             <li data-target="#my-carousel" data-slide-to="4"></li>
-            <li data-target="#my-carousel" data-slide-to="5"></li>
         </ol>
         <div class="carousel-inner">
             <div class="carousel-item active">
@@ -185,13 +207,10 @@
                 <img class="d-block w-100 h-25" src="gog-assets/carousel3.jpg" alt="Third slide">
             </div>
             <div class="carousel-item">
-                <img class="d-block w-100 h-25" src="gog-assets/carousel4.jpg" alt="Forth slide">
+                <img class="d-block w-100 h-25" src="gog-assets/carousel5.jpg" alt="Fourth slide">
             </div>
             <div class="carousel-item">
-                <img class="d-block w-100 h-25" src="gog-assets/carousel5.jpg" alt="Fifth slide">
-            </div>
-            <div class="carousel-item">
-                <img class="d-block w-100 h-25" src="gog-assets/carousel6.jpg" alt="Sixth slide">
+                <img class="d-block w-100 h-25" src="gog-assets/carousel6.jpg" alt="Fifth slide">
             </div>
         </div>
         <a class="carousel-control-prev" href="#my-carousel" role="button" data-slide="prev">
